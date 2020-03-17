@@ -1,0 +1,22 @@
+{% extends "series/base.html" %}
+{% block content %}
+<div class="row">
+    {% for object in episodes %}
+       <div class="col-md-1">
+        </div>
+        <div class="col-md-4">
+            <a ><h2>{{object.name}}</h2></a><br>
+            <img src="{{object.image.url}}">
+            <br><br>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-6">
+            <br>
+            <p>{{object.content}}</p>
+            <p class="post-text"> Posted in {{object.time_posted}}</p>
+        </div>
+
+    {% endfor %}
+</div>
+{% endblock content %}

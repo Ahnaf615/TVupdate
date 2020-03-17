@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="{% static 'series/main.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+            <a class="navbar-brand mr-4" href="#">TVUpdate</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <!-- Navbar Right Side -->
+                <div class="navbar-nav">
+                      <div class="collapse navbar-collapse" id="navbarToggle">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link" href="{% url 'series' %}">Home</a>
+                    <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+                    <a class="nav-item nav-link" href="#">Blog</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="col-md-12">
+         {% block content %}
+        {% endblock %}
+    </div>
+</header>
+
+
+</body>
+</html>
