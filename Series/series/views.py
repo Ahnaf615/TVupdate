@@ -1,19 +1,19 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, CreateView
 
-from .models import Series, Seasons, Episodes
+from .models import Series, Seasons
 
 
-# User Posting Image Enable
-# More Posts later?
+# Add more content
+# Blog add
 
 class SeriesListViews(ListView):
     model = Series
     template_name = "series/series.html"
     context_object_name = "series"
-    paginate_by = 2
+    paginate_by = 4
 
 
 def seasons_func(request, pk):
