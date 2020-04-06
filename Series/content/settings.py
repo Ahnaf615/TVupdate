@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7*_z(a^0-%&*qljb_hi=-35u4f%%5ujvdng49dv#jkq3u00$x-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://ahnaf-series1.herokuapp.com/', '127.0.0.1']
 
