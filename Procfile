@@ -1,1 +1,1 @@
-web: gunicorn Series.content.wsgi --log-file -
+web: gunicorn content.wsgi --log-file -
