@@ -18,7 +18,7 @@ matplotlib==3.1.2
 mccabe==0.6.1
 numpy==1.18.1
 pandas==0.25.3
-Pillow==6.2.1
+Pillow==8.1.1
 psycopg2==2.8.4
 pygame==1.9.6
 pylint==2.4.4
